@@ -59,49 +59,55 @@ def process_data(input_file, id, templates=False):
     else:
         opener = open
 
+    pages = []
+
     input = opener(input_file)
 
-    page = []
-    for line in input:
-        line = line.decode('utf-8')
-        if '<' not in line:         # faster than doing re.search()
-            if page:
-                page.append(line)
-            continue
-        m = tagRE.search(line)
-        if not m:
-            continue
-        tag = m.group(2)
-        if tag == 'page':
-            page = []
-            page.append(line)
-            inArticle = False
-        elif tag == 'id':
-            curid = m.group(3)
-            if id == curid:
-                page.append(line)
-                inArticle = True
-            elif not inArticle and not templates:
-                page = []
-        elif tag == 'title':
-            if templates:
-                if m.group(3).startswith('Template:'):
+    for idx in enumerate(id):
+        page = []
+        for line in input:
+            line = line.decode('utf-8')
+            if '<' not in line:         # faster than doing re.search()
+                if page:
                     page.append(line)
-                else:
+                continue
+            m = tagRE.search(line)
+            if not m:
+                continue
+            tag = m.group(2)
+            if tag == 'page':
+                page = []
+                page.append(line)
+                inArticle = False
+            elif tag == 'id':
+                curid = m.group(3)
+                if curid in id:
+                    print curid
+                    page.append(line)
+                    inArticle = True
+                elif not inArticle and not templates:
                     page = []
-            else:
+            elif tag == 'title':
+                if templates:
+                    if m.group(3).startswith('Template:'):
+                        page.append(line)
+                    else:
+                        page = []
+                else:
+                    page.append(line)
+            elif tag == '/page':
+                if page:
+                    page.append(line)
+                    print ''.join(page).encode('utf-8')
+                    pages.append(page)
+                    if not templates:
+                        break
+                page = []
+            elif page:
                 page.append(line)
-        elif tag == '/page':
-            if page:
-                page.append(line)
-                print ''.join(page).encode('utf-8')
-                if not templates:
-                    break
-            page = []
-        elif page:
-            page.append(line)
 
     input.close()
+    return pages
 
 def main():
     parser = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]),
