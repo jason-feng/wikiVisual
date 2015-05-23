@@ -59,6 +59,8 @@ def process_data(input_file, id, templates=False):
     else:
         opener = open
 
+    pageToTitle = defaultdict{}
+
     pages = []
 
     input = opener(input_file)
@@ -94,12 +96,13 @@ def process_data(input_file, id, templates=False):
                     else:
                         page = []
                 else:
+                    pageToTitle[curid] = tag
                     page.append(line)
             elif tag == '/page':
                 if page:
                     page.append(line)
-                    print ''.join(page).encode('utf-8')
-                    pages.append(page)
+                    # print ''.join(page).encode('utf-8')
+                    pages.append(''.join(page).encode('utf-8'))
                     if not templates:
                         break
                 page = []
@@ -107,7 +110,7 @@ def process_data(input_file, id, templates=False):
                 page.append(line)
 
     input.close()
-    return pages
+    return pages, pageToTitle
 
 def main():
     parser = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]),
