@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # wikiextractor
 [WikiExtractor.py](http://medialab.di.unipi.it/wiki/Wikipedia_Extractor) is a Python script that extracts and cleans text from a [Wikipedia database dump](http://download.wikimedia.org/).
 
@@ -58,7 +57,10 @@ Option --no-templates significantly speeds up the extractor, avoiding the cost o
 
 For further information, visit [the documentation](http://attardi.github.io/wikiextractor).
 
+<<<<<<< HEAD
 =======
 # wikiVisual
 Wikipedia visualization based on category page ranks
 >>>>>>> 61dc96404a42fb2048d7fa2fb8fb4f6bdf2f2cd4
+=======
+>>>>>>> f041f9143f16187ef49ff608d5e317d1e94f702d
