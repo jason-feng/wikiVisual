@@ -5,8 +5,8 @@ from collections import defaultdict
 
 #  File names
 wikiDump = '/Users/jasonfeng/Downloads/enwiki-20150515-pages-articles.xml'
-directorsFile = 'listRussianFilmDirectors'
-testFile = 'listTest'
+directorsFile = '../data/listRussianSovietFilmDirectors'
+testFile = '../data/listTest'
 
 # Save pageIds into list
 listRussianFilmDirectors = [pageId.rstrip('\n') for pageId in open(directorsFile)]
@@ -54,6 +54,6 @@ print titlePageRanks
 d = {"name":"Russian Film Directors",
      "children":[{'name':key,"size":value} for key,value in titlePageRanks.items()]}
 j = json.dumps(d, indent=4)
-f = open('titlePageRanks.json', 'w')
+f = open('json/titlePageRanks.json', 'w')
 print >> f, j
 f.close()
