@@ -36,7 +36,7 @@ import urllib
 import bz2, gzip
 from htmlentitydefs import name2codepoint
 import Queue, threading, multiprocessing
-
+from collections import defaultdict
 
 # Program version
 version = '2.8'
@@ -59,13 +59,13 @@ def process_data(input_file, id, templates=False):
     else:
         opener = open
 
-    pageToTitle = defaultdict{}
+    pageToTitle = defaultdict(str)
 
     pages = []
 
     input = opener(input_file)
 
-    for idx in enumerate(id):
+    for idx, val in enumerate(id):
         page = []
         for line in input:
             line = line.decode('utf-8')
@@ -96,7 +96,7 @@ def process_data(input_file, id, templates=False):
                     else:
                         page = []
                 else:
-                    pageToTitle[curid] = tag
+                    pageToTitle[val] = re.search('<title>(.*)</title>', line).group(1).replace (" ", "_")
                     page.append(line)
             elif tag == '/page':
                 if page:
@@ -110,6 +110,7 @@ def process_data(input_file, id, templates=False):
                 page.append(line)
 
     input.close()
+
     return pages, pageToTitle
 
 def main():

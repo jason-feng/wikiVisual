@@ -1,5 +1,6 @@
 import re
 import extractPage
+import json
 from collections import defaultdict
 
 #  File names
@@ -10,6 +11,9 @@ testFile = 'listTest'
 # Save pageIds into list
 listRussianFilmDirectors = [pageId.rstrip('\n') for pageId in open(directorsFile)]
 listRussianFilmDirectors = sorted(listRussianFilmDirectors, key=int)
+
+print listRussianFilmDirectors
+
 pages, pageToTitle = extractPage.process_data(wikiDump,listRussianFilmDirectors)
 
 print 'finished extracting pages'
@@ -17,6 +21,7 @@ print 'finished extracting pages'
 numLinks = defaultdict(int) #Dictionary of numLinks of each link we find
 pageLinks = defaultdict(list)
 pageRanks = defaultdict(float)
+titlePageRanks = defaultdict(float)
 
 regex='\[\[(.+?)\]\]' # get all matches between [[ ]] this is dump link format
 
@@ -38,4 +43,17 @@ for (idx, directors) in enumerate(listRussianFilmDirectors):
         pageRanks[directors] += 0.85 * 1.0/numLinks[link];
     pageRanks[directors] += 0.15
 
-print pageRanks[directors]
+print pageRanks
+
+# Associate each article title with the pageRank
+for directors in listRussianFilmDirectors:
+    titlePageRanks[pageToTitle[directors]] = pageRanks[directors]
+
+print titlePageRanks
+
+d = {"name":"Russian Film Directors",
+     "children":[{'name':key,"size":value} for key,value in titlePageRanks.items()]}
+j = json.dumps(d, indent=4)
+f = open('titlePageRanks.json', 'w')
+print >> f, j
+f.close()
