@@ -1,0 +1,613 @@
+{
+    "name": "Russian Film Directors", 
+    "children": [
+        {
+            "name": "Vladimir_Khotinenko", 
+            "size": 13.232307097730347
+        }, 
+        {
+            "name": "Andrei_Khrzhanovsky", 
+            "size": 5.268341843082885
+        }, 
+        {
+            "name": "Aleksey_Fedorchenko", 
+            "size": 9.024941997314619
+        }, 
+        {
+            "name": "Yuri_Bykov_(director)", 
+            "size": 10.566515444248118
+        }, 
+        {
+            "name": "Roman_Romanovich_Kachanov", 
+            "size": 17.574772523069054
+        }, 
+        {
+            "name": "Vadim_Abdrashitov", 
+            "size": 15.130576270435663
+        }, 
+        {
+            "name": "Sergio_Olhovich", 
+            "size": 8.65457666089665
+        }, 
+        {
+            "name": "Nikolay_Khomeriki", 
+            "size": 8.41702717638993
+        }, 
+        {
+            "name": "Vladimir_Gardin", 
+            "size": 9.9464096782053
+        }, 
+        {
+            "name": "Fedor_Bondarchuk", 
+            "size": 62.403520434514306
+        }, 
+        {
+            "name": "Yuli_Gusman", 
+            "size": 19.88520985445748
+        }, 
+        {
+            "name": "Mikhail_Porechenkov", 
+            "size": 27.562712461658325
+        }, 
+        {
+            "name": "Andrei_Severny_(filmmaker)", 
+            "size": 42.5269692901972
+        }, 
+        {
+            "name": "Slava_Tsukerman", 
+            "size": 9.7782629298543
+        }, 
+        {
+            "name": "Marianna_Tavrog", 
+            "size": 9.401919580427519
+        }, 
+        {
+            "name": "Vasily_Goncharov", 
+            "size": 13.604035890096743
+        }, 
+        {
+            "name": "Maksim_Pezhemsky", 
+            "size": 9.853693843056595
+        }, 
+        {
+            "name": "Alexander_Gutman", 
+            "size": 9.486414950530992
+        }, 
+        {
+            "name": "Sergei_Ursuliak", 
+            "size": 8.316678309248298
+        }, 
+        {
+            "name": "Grigoriy_Dobrygin", 
+            "size": 65.35272033914185
+        }, 
+        {
+            "name": "Arcady_Boytler", 
+            "size": 22.059142485803676
+        }, 
+        {
+            "name": "Nikolay_Serebryakov", 
+            "size": 3.24771842801448
+        }, 
+        {
+            "name": "Vlad_Yudin", 
+            "size": 4.698206087026076
+        }, 
+        {
+            "name": "Vasily_Livanov", 
+            "size": 41.26944235981128
+        }, 
+        {
+            "name": "Sergei_Ryabov", 
+            "size": 27.435309062552978
+        }, 
+        {
+            "name": "Category:Russian_women_film_directors", 
+            "size": 2.288925438596491
+        }, 
+        {
+            "name": "Eldor_Magomatovich_Urazbayev", 
+            "size": 40.41561556133926
+        }, 
+        {
+            "name": "Roman_Abelevich_Kachanov", 
+            "size": 38.53002202626704
+        }, 
+        {
+            "name": "Boris_Tokarev_(actor)", 
+            "size": 10.015636509864107
+        }, 
+        {
+            "name": "Filipp_Yankovsky", 
+            "size": 6.45763310007151
+        }, 
+        {
+            "name": "Dmitriy_Meshiev", 
+            "size": 4.606460055280045
+        }, 
+        {
+            "name": "Nikita_Mikhalkov", 
+            "size": 105.33315576231882
+        }, 
+        {
+            "name": "Andrei_Smirnov_(actor)", 
+            "size": 11.54905657663944
+        }, 
+        {
+            "name": "Boris_Barnet", 
+            "size": 27.539810557005943
+        }, 
+        {
+            "name": "Mikhail_Vartanov", 
+            "size": 23.227962913048376
+        }, 
+        {
+            "name": "Marion_Gering", 
+            "size": 36.43282894736844
+        }, 
+        {
+            "name": "Andrey_Veter", 
+            "size": 5.706301325121315
+        }, 
+        {
+            "name": "Alexandre_Michon", 
+            "size": 21.43053426836322
+        }, 
+        {
+            "name": "Timur_Bekmambetov", 
+            "size": 52.24322851128693
+        }, 
+        {
+            "name": "Aleksandr_Khvan", 
+            "size": 11.409924513527109
+        }, 
+        {
+            "name": "Alexandre_Volkoff", 
+            "size": 16.95479990642462
+        }, 
+        {
+            "name": "Ivan_Dykhovichny", 
+            "size": 11.961275118934584
+        }, 
+        {
+            "name": "Yakov_Protazanov", 
+            "size": 25.653056448303172
+        }, 
+        {
+            "name": "Ladislas_Starevich", 
+            "size": 53.00996199583695
+        }, 
+        {
+            "name": "Konstantin_Bronzit", 
+            "size": 15.966435688808307
+        }, 
+        {
+            "name": "Andrei_Panin", 
+            "size": 20.43687733827322
+        }, 
+        {
+            "name": "Alexey_Lushnikov", 
+            "size": 67.21878135113397
+        }, 
+        {
+            "name": "Angelina_Nikonova", 
+            "size": 7.911454833893243
+        }, 
+        {
+            "name": "Oleg_Anofriyev", 
+            "size": 16.186514834438082
+        }, 
+        {
+            "name": "Andrei_Kravchuk", 
+            "size": 12.275941183313801
+        }, 
+        {
+            "name": "Yuri_Kara", 
+            "size": 11.221572240799839
+        }, 
+        {
+            "name": "Alexei_Popogrebski", 
+            "size": 4.924098944168934
+        }, 
+        {
+            "name": "Maxim_Pozdorovkin", 
+            "size": 8.070884658454645
+        }, 
+        {
+            "name": "Sergei_Gerasimov_(film_director)", 
+            "size": 47.99613279859921
+        }, 
+        {
+            "name": "Prince_Michael_Feodorovich_of_Russia", 
+            "size": 45.44184210526318
+        }, 
+        {
+            "name": "Pyotr_Todorovsky", 
+            "size": 18.354702406194114
+        }, 
+        {
+            "name": "Mikhail_Segal", 
+            "size": 34.14128343968868
+        }, 
+        {
+            "name": "Anna_Melikian", 
+            "size": 12.749800653151535
+        }, 
+        {
+            "name": "Yuliya_Solntseva", 
+            "size": 20.88452015455306
+        }, 
+        {
+            "name": "Nikolay_Olyalin", 
+            "size": 26.642627553976247
+        }, 
+        {
+            "name": "Andr\u00e9_Andrejew", 
+            "size": 101.9512907268169
+        }, 
+        {
+            "name": "Yevgeni_Bauer", 
+            "size": 23.36515449280253
+        }, 
+        {
+            "name": "Ip_Wischin", 
+            "size": 29.099368957971578
+        }, 
+        {
+            "name": "Aleksei_Balabanov", 
+            "size": 16.16484257518797
+        }, 
+        {
+            "name": "Lidia_Bobrova", 
+            "size": 3.6444909568092285
+        }, 
+        {
+            "name": "Vitaly_Mansky", 
+            "size": 4.255810894499304
+        }, 
+        {
+            "name": "Dimitri_Buchowetzki", 
+            "size": 42.229547878108754
+        }, 
+        {
+            "name": "Sergei_Bodrov", 
+            "size": 18.787590561215424
+        }, 
+        {
+            "name": "Andrei_Nekrasov", 
+            "size": 27.957138634741536
+        }, 
+        {
+            "name": "Gennadi_Poloka", 
+            "size": 10.598163638262323
+        }, 
+        {
+            "name": "Karen_Shakhnazarov", 
+            "size": 13.025345010150053
+        }, 
+        {
+            "name": "Boris_Svetlov", 
+            "size": 18.199112685560053
+        }, 
+        {
+            "name": "Fedor_Ozep", 
+            "size": 25.894977025898097
+        }, 
+        {
+            "name": "Aleksandr_Rogozhkin", 
+            "size": 28.074781793213493
+        }, 
+        {
+            "name": "Valery_Todorovsky", 
+            "size": 15.397871012743636
+        }, 
+        {
+            "name": "Leonid_Nechayev", 
+            "size": 6.16092418546366
+        }, 
+        {
+            "name": "Category:Imperial_Russian_film_directors", 
+            "size": 2.1174342105263153
+        }, 
+        {
+            "name": "Sergei_Bodrov,_Jr.", 
+            "size": 34.342957299978195
+        }, 
+        {
+            "name": "Mikheil_Kalatozishvili_(born_1959)", 
+            "size": 9.038581439576506
+        }, 
+        {
+            "name": "Category:Russian_film_director_navigational_boxes", 
+            "size": 3.8118421052631577
+        }, 
+        {
+            "name": "Gleb_Panfilov", 
+            "size": 25.344536757452158
+        }, 
+        {
+            "name": "Ishtar_Yasin_Gutierrez", 
+            "size": 13.449591843082882
+        }, 
+        {
+            "name": "L\u00e9onide_Moguy", 
+            "size": 18.165771705450982
+        }, 
+        {
+            "name": "Vladimir_Menshov", 
+            "size": 43.30445942056168
+        }, 
+        {
+            "name": "Andrey_Kavun", 
+            "size": 15.536306684345421
+        }, 
+        {
+            "name": "George_Tsisetski", 
+            "size": 13.368705864113023
+        }, 
+        {
+            "name": "Alexander_Tatarsky", 
+            "size": 15.126669543588878
+        }, 
+        {
+            "name": "Ilya_Khrzhanovsky", 
+            "size": 28.167411186250863
+        }, 
+        {
+            "name": "Eldar_Kuliev", 
+            "size": 18.55948642127516
+        }, 
+        {
+            "name": "Vladimir_Maslov", 
+            "size": 3.1891733409610983
+        }, 
+        {
+            "name": "Artur_Aristakisyan", 
+            "size": 3.937704833893244
+        }, 
+        {
+            "name": "Sarik_Andreasyan", 
+            "size": 18.84358156526161
+        }, 
+        {
+            "name": "Vasily_Shukshin", 
+            "size": 32.8759144272331
+        }, 
+        {
+            "name": "Alexander_Nevsky_(actor)", 
+            "size": 5.260371843974442
+        }, 
+        {
+            "name": "Sergei_Nolbandov", 
+            "size": 11.117747311168362
+        }, 
+        {
+            "name": "Andrei_Andreyevich_Eshpai", 
+            "size": 16.21466628094479
+        }, 
+        {
+            "name": "Andrej_Andreevich_Zolotov", 
+            "size": 2.911856880676869
+        }, 
+        {
+            "name": "Andrey_Zvyagintsev", 
+            "size": 16.749819473639462
+        }, 
+        {
+            "name": "Vladimir_Bortko", 
+            "size": 20.230207161900445
+        }, 
+        {
+            "name": "Alexander_Borodyansky", 
+            "size": 8.92379522618751
+        }, 
+        {
+            "name": "Vladimir_Mashkov", 
+            "size": 45.320381955906775
+        }, 
+        {
+            "name": "Aleksandr_Porokhovshchikov", 
+            "size": 7.119500761125475
+        }, 
+        {
+            "name": "Pavel_Lungin", 
+            "size": 21.213889223334217
+        }, 
+        {
+            "name": "Pyotr_Chardynin", 
+            "size": 46.67645009960803
+        }, 
+        {
+            "name": "Ivan_Okhlobystin", 
+            "size": 27.090067017222268
+        }, 
+        {
+            "name": "Sergei_Solovyov", 
+            "size": 20.855756504616906
+        }, 
+        {
+            "name": "Mikhail_Tumanishvili", 
+            "size": 15.819062505159474
+        }, 
+        {
+            "name": "Pyotr_Tochilin", 
+            "size": 6.867366447864068
+        }, 
+        {
+            "name": "Aleksei_Saltykov", 
+            "size": 11.638760379470835
+        }, 
+        {
+            "name": "Samson_Samsonov", 
+            "size": 7.9796353743193
+        }, 
+        {
+            "name": "Gregory_Ratoff", 
+            "size": 79.36751866427493
+        }, 
+        {
+            "name": "Nikita_Gennadievich_Tyagunov", 
+            "size": 3.840964276633613
+        }, 
+        {
+            "name": "Stanislav_Govorukhin", 
+            "size": 27.15892661526628
+        }, 
+        {
+            "name": "Alexander_Sokurov", 
+            "size": 45.08275827976406
+        }, 
+        {
+            "name": "Valeriya_Gai_Germanika", 
+            "size": 18.06417047716809
+        }, 
+        {
+            "name": "Pavel_Ruminov", 
+            "size": 20.78576139356165
+        }, 
+        {
+            "name": "Alexis_Granowsky", 
+            "size": 19.450697613789725
+        }, 
+        {
+            "name": "Vsevolod_Pudovkin", 
+            "size": 40.13146292387534
+        }, 
+        {
+            "name": "Alexander_Kott", 
+            "size": 3.421926325121314
+        }, 
+        {
+            "name": "Viktor_Ivanov_(stunt_coordinator)", 
+            "size": 5.533815945004355
+        }, 
+        {
+            "name": "Alexei_Makarov", 
+            "size": 5.73324878888943
+        }, 
+        {
+            "name": "Yuri_Mamin", 
+            "size": 56.518751815333204
+        }, 
+        {
+            "name": "Tigran_Keosayan", 
+            "size": 9.645331259558857
+        }, 
+        {
+            "name": "Alexander_Mitta", 
+            "size": 18.02793481066069
+        }, 
+        {
+            "name": "Georgi_Gitis", 
+            "size": 9.534753382574731
+        }, 
+        {
+            "name": "Costa_Fam", 
+            "size": 22.102542134432777
+        }, 
+        {
+            "name": "Maria_Morozova", 
+            "size": 3.4528084817682725
+        }, 
+        {
+            "name": "Oleg_Ryaskov", 
+            "size": 5.996099932311226
+        }, 
+        {
+            "name": "Aleksandr_Ivanovsky", 
+            "size": 9.274842281521341
+        }, 
+        {
+            "name": "Aleksei_Yuryevich_German", 
+            "size": 16.209543824839873
+        }, 
+        {
+            "name": "Semyon_Aranovich", 
+            "size": 12.330926078355285
+        }, 
+        {
+            "name": "Pavel_Chukhray", 
+            "size": 5.467435267932888
+        }, 
+        {
+            "name": "Orfeo_(Rossi)", 
+            "size": 51.5543560606061
+        }, 
+        {
+            "name": "Ikiru_(director)", 
+            "size": 5.300190214010203
+        }, 
+        {
+            "name": "Andrei_Tarkovsky", 
+            "size": 135.48640592737382
+        }, 
+        {
+            "name": "Valeriy_Priyomykhov", 
+            "size": 14.886893865097527
+        }, 
+        {
+            "name": "Viktor_Kossakovsky", 
+            "size": 15.257625789217155
+        }, 
+        {
+            "name": "Vassily_Sigarev", 
+            "size": 13.916666186550248
+        }, 
+        {
+            "name": "Victor_Trivas", 
+            "size": 11.885415060086109
+        }, 
+        {
+            "name": "Yevgeny_Yufit", 
+            "size": 7.517905335146376
+        }, 
+        {
+            "name": "Aleksandr_Proshkin", 
+            "size": 3.3107283247785757
+        }, 
+        {
+            "name": "Alexei_Uchitel", 
+            "size": 8.922545412418032
+        }, 
+        {
+            "name": "Ruslan_Vitryanyuk", 
+            "size": 22.936198985940035
+        }, 
+        {
+            "name": "Alexander_Stefanovich", 
+            "size": 4.428435152233687
+        }, 
+        {
+            "name": "Alexander_Goldstein", 
+            "size": 82.29197592829587
+        }, 
+        {
+            "name": "Konstantin_Lopushansky", 
+            "size": 7.4014594944982335
+        }, 
+        {
+            "name": "Category:Films_by_Russian_directors", 
+            "size": 4.373449248120301
+        }, 
+        {
+            "name": "Vladimir_Naumov", 
+            "size": 10.640196791822488
+        }, 
+        {
+            "name": "Victor_Ginzburg_(director)", 
+            "size": 33.90915696208703
+        }, 
+        {
+            "name": "Vera_Storozheva", 
+            "size": 7.31654359746885
+        }, 
+        {
+            "name": "Pavel_Lyubimov", 
+            "size": 7.068954070656016
+        }, 
+        {
+            "name": "Alyona_Polunina", 
+            "size": 6.3997181775052
+        }
+    ]
+}
