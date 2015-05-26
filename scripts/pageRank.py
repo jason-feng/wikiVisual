@@ -54,6 +54,6 @@ print titlePageRanks
 d = {"name":"Russian Film Directors",
      "children":[{'name':key,"size":value} for key,value in titlePageRanks.items()]}
 j = json.dumps(d, indent=4)
-f = open('json/titlePageRanks.json', 'w')
+f = open('../json/pageRanks.json', 'w')
 print >> f, j
 f.close()
