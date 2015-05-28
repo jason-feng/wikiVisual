@@ -13,15 +13,15 @@ testFile = '../data/listTest'
 listRussianFilmDirectors = [pageId.rstrip('\n') for pageId in open(directorsFile)]
 listRussianFilmDirectors = sorted(listRussianFilmDirectors, key=int)
 
+#Pages is the full page of each pageid, #pageToTitle is the title of every page
 pages, pageToTitle = extractPage.process_data(wikiDump,listRussianFilmDirectors)
 
 numLinks = defaultdict(int) #Dictionary of numLinks of each link we find
-pageLinks = defaultdict(list)
-pageRanks = defaultdict(float)
-idBirth = defaultdict(str)
-titlePageRanks = defaultdict(float)
+pageLinks = defaultdict(list) #Dictionary of the links of every page
+pageRanks = defaultdict(float) #Dictionary of the page rank of every page
+idBirth = defaultdict(str) #Dictionary of the birth year of every page
 
-
+# Parse each page for links and birth dates
 regexLink='\[\[(.+?)\]\]' # get all matches between [[ ]] this is dump link format
 regexBirth='\{\{Birth date(.+?)\}\}' # birth_date = {{Birth date|df=yes|1932|4|4}}
 for idx, directors in enumerate(listRussianFilmDirectors):
@@ -30,10 +30,14 @@ for idx, directors in enumerate(listRussianFilmDirectors):
     for link in internal_links:
         numLinks[link] += 1
         pageLinks[directors].append(link)
-    birth_date = re.findall(regexBirth, pages[idx])[0]
-    birth_date = birth_date.split('|')
-    birth_year = birth_date[2]
-    idBirth[directors] = birth_year
+    birth_date = re.findall(regexBirth, pages[idx])
+    if birth_date:
+        birth_date = birth_date[0];
+        birth_date = birth_date.split('|')
+        birth_year = birth_date[2]
+        idBirth[directors] = birth_year
+    else:
+        listRussianFilmDirectors.remove(directors)
 
 print idBirth
 
@@ -50,16 +54,10 @@ for (idx, directors) in enumerate(listRussianFilmDirectors):
 
 print pageRanks
 
-# Associate each article title with the pageRank
-for directors in listRussianFilmDirectors:
-    titlePageRanks[pageToTitle[directors]] = pageRanks[directors]
-
-print titlePageRanks
-
 # Write out data to csv
 f = open('../csv/pageRanks.csv','wb')
 writer = csv.writer(f)
-csv = ["name","value"]
+csv = ["title","pagerank","year","id"]
 writer.writerow(csv)
 for key, value in pageRanks.items():
    writer.writerow([pageToTitle[key], value, idBirth[key], key])
