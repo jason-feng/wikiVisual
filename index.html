@@ -13,7 +13,7 @@
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script>
 
-    var diameter = 1540,
+    var diameter = 1440,
     format = d3.format(",d"),
     color = d3.scale.category20c();
 
@@ -27,7 +27,7 @@
     .attr("height", diameter)
     .attr("class", "bubble");
 
-    d3.json("json/titlePageRanks.json", function(error, root) {
+    d3.json("json/pageRanks.json", function(error, root) {
         var node = svg.selectAll(".node")
         .data(bubble.nodes(classes(root))
         .filter(function(d) { return !d.children; }))
@@ -49,7 +49,7 @@
         node.append("text")
         .attr("dy", ".3em")
         .style("text-anchor", "middle")
-        .text(function(d) { return d.className.split('_')[0].substring(0, d.r / 2) + " " + d.className.split('_')[1].substring(0, d.r / 2); });
+        .text(function(d) { return d.className.split('_')[0].substring(0, d.r / 2) + " " + d.className.split('_')[1] });
 
         node.on("click", function(d) {
             console.log(d3.select(this).attr("href"));

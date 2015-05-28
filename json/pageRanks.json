@@ -1,234 +1,1082 @@
-[
-    {
-        "name": "Sergei_Solovyov",
-        "size": 22.3655009783066
-    },
-    {
-        "name": "Timur_Bekmambetov",
-        "size": 56.725158075595274
-    },
-    {
-        "name": "Sergei_Bodrov",
-        "size": 20.10779516073236
-    },
-    {
-        "name": "Andrei_Nekrasov",
-        "size": 30.078015819703037
-    },
-    {
-        "name": "Konstantin_Bronzit",
-        "size": 17.65162693081412
-    },
-    {
-        "name": "Gregory_Ratoff",
-        "size": 82.36930543443242
-    },
-    {
-        "name": "Ilya_Khrzhanovsky",
-        "size": 29.986490790499428
-    },
-    {
-        "name": "Karen_Shakhnazarov",
-        "size": 14.365882926141548
-    },
-    {
-        "name": "Yakov_Protazanov",
-        "size": 28.635195769382978
-    },
-    {
-        "name": "Boris_Svetlov",
-        "size": 18.41716103121664
-    },
-    {
-        "name": "Ladislas_Starevich",
-        "size": 58.75199068742791
-    },
-    {
-        "name": "Vadim_Abdrashitov",
-        "size": 16.29100102893822
-    },
-    {
-        "name": "Vsevolod_Pudovkin",
-        "size": 42.23235764503169
-    },
-    {
-        "name": "Aleksandr_Rogozhkin",
-        "size": 28.99219090387811
-    },
-    {
-        "name": "Viktor_Ivanov_(stunt_coordinator)",
-        "size": 5.745494174681367
-    },
-    {
-        "name": "Andrei_Panin",
-        "size": 21.63865814521376
-    },
-    {
-        "name": "Vladimir_Gardin",
-        "size": 11.438186954610995
-    },
-    {
-        "name": "Fedor_Bondarchuk",
-        "size": 69.65015541291406
-    },
-    {
-        "name": "Sergei_Ursuliak",
-        "size": 9.453218029773643
-    },
-    {
-        "name": "Yuli_Gusman",
-        "size": 21.61906639437201
-    },
-    {
-        "name": "Sergei_Bodrov,_Jr.",
-        "size": 37.2990427605984
-    },
-    {
-        "name": "Vladimir_Mashkov",
-        "size": 51.13514063932785
-    },
-    {
-        "name": "Tigran_Keosayan",
-        "size": 11.052936454623644
-    },
-    {
-        "name": "Alexander_Mitta",
-        "size": 19.115452878258495
-    },
-    {
-        "name": "Valery_Todorovsky",
-        "size": 17.411495673182863
-    },
-    {
-        "name": "Andrei_Kravchuk",
-        "size": 12.522817407004597
-    },
-    {
-        "name": "L\u00e9onide_Moguy",
-        "size": 20.51856096899816
-    },
-    {
-        "name": "Vladimir_Menshov",
-        "size": 46.09787712068276
-    },
-    {
-        "name": "Sergei_Gerasimov_(film_director)",
-        "size": 50.85236305628711
-    },
-    {
-        "name": "Aleksei_Yuryevich_German",
-        "size": 17.4528685133057
-    },
-    {
-        "name": "Alexander_Borodyansky",
-        "size": 9.19465163758883
-    },
-    {
-        "name": "Alexander_Gutman",
-        "size": 10.21064568983288
-    },
-    {
-        "name": "Lidia_Bobrova",
-        "size": 5.636018465205657
-    },
-    {
-        "name": "Arcady_Boytler",
-        "size": 24.17795107450669
-    },
-    {
-        "name": "Stanislav_Govorukhin",
-        "size": 29.854411665920303
-    },
-    {
-        "name": "Andrei_Tarkovsky",
-        "size": 139.4080597109965
-    },
-    {
-        "name": "Alexander_Sokurov",
-        "size": 50.16634528785389
-    },
-    {
-        "name": "Vitaly_Mansky",
-        "size": 5.698470365157558
-    },
-    {
-        "name": "Vasily_Livanov",
-        "size": 45.14970372000936
-    },
-    {
-        "name": "Pyotr_Todorovsky",
-        "size": 19.34592027635747
-    },
-    {
-        "name": "Yevgeny_Yufit",
-        "size": 8.051740309498928
-    },
-    {
-        "name": "Alexei_Uchitel",
-        "size": 9.671637753324944
-    },
-    {
-        "name": "Vasily_Shukshin",
-        "size": 36.32190271983992
-    },
-    {
-        "name": "Alexander_Stefanovich",
-        "size": 5.63349561768281
-    },
-    {
-        "name": "Nikita_Mikhalkov",
-        "size": 112.42200309217688
-    },
-    {
-        "name": "Andrei_Andreyevich_Eshpai",
-        "size": 17.208167334854526
-    },
-    {
-        "name": "Andrey_Zvyagintsev",
-        "size": 19.875373739560935
-    },
-    {
-        "name": "Yevgeni_Bauer",
-        "size": 25.94812265730986
-    },
-    {
-        "name": "George_Tsisetski",
-        "size": 14.160017984205174
-    },
-    {
-        "name": "Vladimir_Naumov",
-        "size": 11.07992298661018
-    },
-    {
-        "name": "Ishtar_Yasin_Gutierrez",
-        "size": 13.70992058160777
-    },
-    {
-        "name": "Aleksei_Balabanov",
-        "size": 18.35045645446507
-    },
-    {
-        "name": "Boris_Barnet",
-        "size": 30.6128953845826
-    },
-    {
-        "name": "Mikhail_Vartanov",
-        "size": 25.2839176956049
-    },
-    {
-        "name": "Pavel_Chukhray",
-        "size": 6.176933912192532
-    },
-    {
-        "name": "Pavel_Lungin",
-        "size": 23.34299838343558
-    },
-    {
-        "name": "Alexander_Tatarsky",
-        "size": 16.557050211237396
-    },
-    {
-        "name": "Alexandre_Michon",
-        "size": 22.778257522444722
-    }
-]
+{
+    "name": "Russian Film Directors",
+    "children": [
+        {
+            "name" : "1900s",
+            "children": [
+                {
+                    "name": "Vladimir_Khotinenko",
+                    "size": 12.192798976533867
+                },
+                {
+                    "name": "Leonid_Filatov",
+                    "size": 15.795760685491105
+                },
+                {
+                    "name": "Sergei_Ryabov",
+                    "size": 26.471877639408177
+                },
+                {
+                    "name": "Aleksey_Fedorchenko",
+                    "size": 8.540772757066227
+                },
+                {
+                    "name": "Alexander_Kott",
+                    "size": 3.4019021409712593
+                },
+                {
+                    "name": "Yevgeny_Matveyev",
+                    "size": 84.2926576043088
+                },
+                {
+                    "name": "Vasili_Pichul",
+                    "size": 4.081641214398399
+                },
+                {
+                    "name": "Alexei_Makarov",
+                    "size": 23.36300416270567
+                }
+            ]
+        },
+        {
+            "name": "Races_and_species_in_The_Hitchhiker's_Guide_to_the_Galaxy",
+            "size": 4.550000000000001
+        },
+        {
+            "name": "Olga_Preobrazhenskaya_(director)",
+            "size": 17.902781288437453
+        },
+        {
+            "name": "Vadim_Abdrashitov",
+            "size": 13.564269256910153
+        },
+        {
+            "name": "Andrei_Khrzhanovsky",
+            "size": 5.629914323407313
+        },
+        {
+            "name": "Enda_Williams",
+            "size": 20.157852415393016
+        },
+        {
+            "name": "Aleksandr_Zarkhi",
+            "size": 17.75403054823205
+        },
+        {
+            "name": "Nikolay_Khomeriki",
+            "size": 8.186151113776445
+        },
+        {
+            "name": "Andrej_Andreevich_Zolotov",
+            "size": 34.875355228038956
+        },
+        {
+            "name": "Roman_Karmen",
+            "size": 89.4184170905704
+        },
+        {
+            "name": "Vladimir_Gardin",
+            "size": 7.8167812245147354
+        },
+        {
+            "name": "Fedor_Bondarchuk",
+            "size": 57.667594398037345
+        },
+        {
+            "name": "Yuli_Gusman",
+            "size": 16.39325116896738
+        },
+        {
+            "name": "Revaz_Chkheidze",
+            "size": 14.339444143925574
+        },
+        {
+            "name": "Viktor_Aristov_(director)",
+            "size": 13.096214169896824
+        },
+        {
+            "name": "Rza_Tahmasib",
+            "size": 14.041032124007499
+        },
+        {
+            "name": "Vytautas_\u017dalakevi\u010dius",
+            "size": 71.44644608928088
+        },
+        {
+            "name": "Eldar_Shengelaia",
+            "size": 31.83179487837574
+        },
+        {
+            "name": "Yuli_Raizman",
+            "size": 20.57187568737573
+        },
+        {
+            "name": "Hiram_G._Berry",
+            "size": 1.6812499999999997
+        },
+        {
+            "name": "Aleksandr_Razumny",
+            "size": 60.025064256059856
+        },
+        {
+            "name": "Tamaz_Meliava",
+            "size": 7.732121929752729
+        },
+        {
+            "name": "Roman_Abelevich_Kachanov",
+            "size": 32.14816319215681
+        },
+        {
+            "name": "Mikhail_Porechenkov",
+            "size": 27.058114144066984
+        },
+        {
+            "name": "Aleksandr_Faintsimmer",
+            "size": 4.2709380234505865
+        },
+        {
+            "name": "Slava_Tsukerman",
+            "size": 9.522243938863497
+        },
+        {
+            "name": "Marianna_Tavrog",
+            "size": 6.892972176478408
+        },
+        {
+            "name": "Vasily_Goncharov",
+            "size": 12.889635641060961
+        },
+        {
+            "name": "Igor_Savchenko",
+            "size": 2.959978035259244
+        },
+        {
+            "name": "Kira_Muratova",
+            "size": 40.064512318666864
+        },
+        {
+            "name": "Maksim_Pezhemsky",
+            "size": 9.315772656716764
+        },
+        {
+            "name": "Dapping_block",
+            "size": 36.13952668131799
+        },
+        {
+            "name": "Alexander_Gutman",
+            "size": 8.942983457497037
+        },
+        {
+            "name": "Sergei_Ursuliak",
+            "size": 8.248425068395125
+        },
+        {
+            "name": "Fyodor_Khitruk",
+            "size": 25.852657103395835
+        },
+        {
+            "name": "Ilya_Trauberg",
+            "size": 10.584042233018629
+        },
+        {
+            "name": "Arcady_Boytler",
+            "size": 20.0455584094692
+        },
+        {
+            "name": "Mikheil_Chiaureli",
+            "size": 7.417206386274782
+        },
+        {
+            "name": "Vlad_Yudin",
+            "size": 4.624456142388705
+        },
+        {
+            "name": "Bolotbek_Shamshiyev",
+            "size": 4.654267648617198
+        },
+        {
+            "name": "Alexandre_Tsutsunava",
+            "size": 3.5883752646514138
+        },
+        {
+            "name": "Vladimir_Motyl",
+            "size": 21.081452538738514
+        },
+        {
+            "name": "Vasily_Livanov",
+            "size": 37.72278395251189
+        },
+        {
+            "name": "Goderdzi_Chokheli",
+            "size": 24.676039848790484
+        },
+        {
+            "name": "Ivan_Perestiani",
+            "size": 20.44801497317641
+        },
+        {
+            "name": "Yuriy_Norshteyn",
+            "size": 53.346117329110285
+        },
+        {
+            "name": "Melis_Abzalov",
+            "size": 9.34757353943408
+        },
+        {
+            "name": "Dapping_blocks",
+            "size": 1.3199999999999998
+        },
+        {
+            "name": "Andrei_Konchalovsky",
+            "size": 42.07749985044743
+        },
+        {
+            "name": "Savva_Kulish",
+            "size": 4.250224854203682
+        },
+        {
+            "name": "Dinara_Asanova",
+            "size": 13.758283058752035
+        },
+        {
+            "name": "Roman_Romanovich_Kachanov",
+            "size": 41.37947415793236
+        },
+        {
+            "name": "Filipp_Yankovsky",
+            "size": 5.835245658799659
+        },
+        {
+            "name": "Nana_Jorjadze",
+            "size": 96.22737104986994
+        },
+        {
+            "name": "Dmitriy_Meshiev",
+            "size": 4.273879579379912
+        },
+        {
+            "name": "Andrei_Smirnov_(actor)",
+            "size": 9.951154662371179
+        },
+        {
+            "name": "Nikita_Mikhalkov",
+            "size": 226.95330763738625
+        },
+        {
+            "name": "Hasan_Seyidbeyli",
+            "size": 7.445300985070746
+        },
+        {
+            "name": "Iosif_Kheifits",
+            "size": 12.208480814195584
+        },
+        {
+            "name": "Lev_Milchin",
+            "size": 15.819212883752414
+        },
+        {
+            "name": "Borys_Ivchenko",
+            "size": 6.268269372656935
+        },
+        {
+            "name": "Aleksandr_Stolper",
+            "size": 6.198934412008886
+        },
+        {
+            "name": "Natalya_Bondarchuk",
+            "size": 10.343507060809694
+        },
+        {
+            "name": "Boris_Barnet",
+            "size": 22.650807918544363
+        },
+        {
+            "name": "Mikhail_Vartanov",
+            "size": 19.856907876513638
+        },
+        {
+            "name": "Alexandre_Volkoff",
+            "size": 16.03150715396692
+        },
+        {
+            "name": "Andrey_Veter",
+            "size": 5.6288807841873405
+        },
+        {
+            "name": "Tatyana_Lioznova",
+            "size": 10.685369207577235
+        },
+        {
+            "name": "Alexandre_Michon",
+            "size": 20.56480529213728
+        },
+        {
+            "name": "Timur_Bekmambetov",
+            "size": 47.71972886985703
+        },
+        {
+            "name": "Aleksandr_Khvan",
+            "size": 10.9800171478237
+        },
+        {
+            "name": "Andrei_Alekseyevich_Popov",
+            "size": 26.593705145079017
+        },
+        {
+            "name": "Aleksandr_Rogozhkin",
+            "size": 25.971682259976006
+        },
+        {
+            "name": "Semyon_Aranovich",
+            "size": 10.364484140852811
+        },
+        {
+            "name": "Latif_Safarov",
+            "size": 11.315987634522196
+        },
+        {
+            "name": "Yakov_Protazanov",
+            "size": 22.981916040156207
+        },
+        {
+            "name": "Nikolai_Ekk",
+            "size": 3.998222819130417
+        },
+        {
+            "name": "Aleksandr_Ptushko",
+            "size": 62.886800690860085
+        },
+        {
+            "name": "Scott_McMorrow",
+            "size": 29.72047401651094
+        },
+        {
+            "name": "Georgian_Theatre,_Richmond",
+            "size": 2.0
+        },
+        {
+            "name": "Aleksei_Kapler",
+            "size": 17.721751965423362
+        },
+        {
+            "name": "Aleksandr_Alov",
+            "size": 27.842926020510834
+        },
+        {
+            "name": "Konstantin_Bronzit",
+            "size": 13.754435094952703
+        },
+        {
+            "name": "Loch_Lomond",
+            "size": 100.17499999999983
+        },
+        {
+            "name": "Andrei_Panin",
+            "size": 20.027370611446734
+        },
+        {
+            "name": "Alexei_Popogrebski",
+            "size": 4.7210002547550864
+        },
+        {
+            "name": "Vladimir_Bortko",
+            "size": 16.983216880659654
+        },
+        {
+            "name": "Vladimir_Petrov_(director)",
+            "size": 5.013010085688854
+        },
+        {
+            "name": "Dmitri_Vasilyev_(director)",
+            "size": 8.625333594505573
+        },
+        {
+            "name": "Erast_Garin",
+            "size": 69.84272742515402
+        },
+        {
+            "name": "Orfeo_(Rossi)",
+            "size": 102.95931965547364
+        },
+        {
+            "name": "Yo\u02bbldosh_A\u02bczamov",
+            "size": 9.58699961547717
+        },
+        {
+            "name": "Hamo_Beknazarian",
+            "size": 12.122537836525373
+        },
+        {
+            "name": "Ivan_Pyryev",
+            "size": 23.203164743471717
+        },
+        {
+            "name": "Costa_Fam",
+            "size": 19.376991192931833
+        },
+        {
+            "name": "Grigori_Kozintsev",
+            "size": 21.062865774192172
+        },
+        {
+            "name": "Grigory_Chukhray",
+            "size": 29.3518109902155
+        },
+        {
+            "name": "Aleksandrs_Leimanis",
+            "size": 6.186989992741007
+        },
+        {
+            "name": "Solomon_Efimovich_Shulman",
+            "size": 11.950523925821813
+        },
+        {
+            "name": "Alexander_Borodyansky",
+            "size": 8.143195206757014
+        },
+        {
+            "name": "Anatole_Litvak",
+            "size": 62.26129740904771
+        },
+        {
+            "name": "Dodo_Abashidze",
+            "size": 3.895286718605503
+        },
+        {
+            "name": "Maxim_Pozdorovkin",
+            "size": 7.622668993794325
+        },
+        {
+            "name": "Almenara,_Brazil",
+            "size": 2.10625
+        },
+        {
+            "name": "Abram_Room",
+            "size": 4.414091566125717
+        },
+        {
+            "name": "Sergei_Gerasimov_(film_director)",
+            "size": 98.48543795552136
+        },
+        {
+            "name": "Ivan_Dykhovichny",
+            "size": 11.534411906827218
+        },
+        {
+            "name": "Leonid_Amalrik",
+            "size": 4.329934925194175
+        },
+        {
+            "name": "Pyotr_Todorovsky",
+            "size": 16.04297817675106
+        },
+        {
+            "name": "Mikhail_Segal",
+            "size": 32.27607153152243
+        },
+        {
+            "name": "Leonid_Gaidai",
+            "size": 135.4357954429328
+        },
+        {
+            "name": "Anna_Melikian",
+            "size": 12.006870567234081
+        },
+        {
+            "name": "Litjotjela",
+            "size": 10.499999999999998
+        },
+        {
+            "name": "Nikolay_Olyalin",
+            "size": 20.500774467203428
+        },
+        {
+            "name": "Sarik_Andreasyan",
+            "size": 16.98085386207303
+        },
+        {
+            "name": "Izya_Gershtein",
+            "size": 20.237033834966642
+        },
+        {
+            "name": "Giorgi_Shengelaia",
+            "size": 4.928469181530091
+        },
+        {
+            "name": "Nikolay_Petrovich_Fyodorov",
+            "size": 3.4721872980607706
+        },
+        {
+            "name": "Pyotr_Chardynin",
+            "size": 45.172688554587275
+        },
+        {
+            "name": "Andr\u00e9_Andrejew",
+            "size": 97.40763078418723
+        },
+        {
+            "name": "Arcady_Ruderman",
+            "size": 26.143900022699093
+        },
+        {
+            "name": "Vassily_Sigarev",
+            "size": 13.760804906318109
+        },
+        {
+            "name": "Yevgeni_Bauer",
+            "size": 22.171295136368954
+        },
+        {
+            "name": "Samvel_Gasparov",
+            "size": 68.5481788988357
+        },
+        {
+            "name": "Iosif_Boyarsky",
+            "size": 45.87856114155176
+        },
+        {
+            "name": "Aleksei_Balabanov",
+            "size": 65.06758536671677
+        },
+        {
+            "name": "Lidia_Bobrova",
+            "size": 32.824669985902446
+        },
+        {
+            "name": "Vitaly_Mansky",
+            "size": 3.824955271294435
+        },
+        {
+            "name": "Dimitri_Buchowetzki",
+            "size": 41.528772194791024
+        },
+        {
+            "name": "Miguel_Bernal",
+            "size": 3.785
+        },
+        {
+            "name": "Viktor_Ivchenko",
+            "size": 9.911020295771314
+        },
+        {
+            "name": "Georgi_Stabovoi",
+            "size": 5.270324828303456
+        },
+        {
+            "name": "Sergio_Olhovich",
+            "size": 7.765440660054443
+        },
+        {
+            "name": "Andrei_Nekrasov",
+            "size": 25.269552287163545
+        },
+        {
+            "name": "Shuhrat_Abbosov",
+            "size": 9.937008063243603
+        },
+        {
+            "name": "Alexey_Lushnikov",
+            "size": 65.46057297150458
+        },
+        {
+            "name": "Mikhail_Karyukov",
+            "size": 2.518940624117338
+        },
+        {
+            "name": "Karen_Shakhnazarov",
+            "size": 11.983240251414758
+        },
+        {
+            "name": "Boris_Svetlov",
+            "size": 17.54476421146529
+        },
+        {
+            "name": "Juris_Podnieks",
+            "size": 16.624379806615703
+        },
+        {
+            "name": "Fedor_Ozep",
+            "size": 25.725634280124396
+        },
+        {
+            "name": "Aleksandr_Kozyr",
+            "size": 3.8365802939160627
+        },
+        {
+            "name": "Stanislav_Rostotsky",
+            "size": 20.07518310370861
+        },
+        {
+            "name": "Urethrorectal_fistula",
+            "size": 2.10625
+        },
+        {
+            "name": "Hiram_George_Berry",
+            "size": 22.39712821097286
+        },
+        {
+            "name": "Mikhail_Kalatozov",
+            "size": 13.181773431661927
+        },
+        {
+            "name": "Valery_Todorovsky",
+            "size": 13.05773617200378
+        },
+        {
+            "name": "Leonid_Nechayev",
+            "size": 5.012252236482026
+        },
+        {
+            "name": "Samson_Samsonov",
+            "size": 6.387626103410422
+        },
+        {
+            "name": "Sergei_Bodrov,_Jr.",
+            "size": 33.768015579983235
+        },
+        {
+            "name": "Gleb_Panfilov",
+            "size": 23.399267322777693
+        },
+        {
+            "name": "Ishtar_Yasin_Gutierrez",
+            "size": 53.31379211462255
+        },
+        {
+            "name": "Efim_Dzigan",
+            "size": 4.943084634131869
+        },
+        {
+            "name": "Leonid_Lukov",
+            "size": 8.806771817786771
+        },
+        {
+            "name": "Vladimir_Basov",
+            "size": 20.596966816211484
+        },
+        {
+            "name": "Alexander_Dovzhenko",
+            "size": 32.403712422097
+        },
+        {
+            "name": "Vladimir_Vengerov",
+            "size": 2.9547442541046434
+        },
+        {
+            "name": "Leonide_Moguy",
+            "size": 16.631371162065342
+        },
+        {
+            "name": "Otar_Iosseliani",
+            "size": 24.222391633683046
+        },
+        {
+            "name": "Vladimir_Menshov",
+            "size": 42.386311086914205
+        },
+        {
+            "name": "Andrey_Kavun",
+            "size": 15.085238704029958
+        },
+        {
+            "name": "Nipple_tassel",
+            "size": 3.8499999999999996
+        },
+        {
+            "name": "Edmond_Keosayan",
+            "size": 44.131986191179806
+        },
+        {
+            "name": "George_Tsisetski",
+            "size": 10.641010018232496
+        },
+        {
+            "name": "Alexander_Tatarsky",
+            "size": 11.740368741575011
+        },
+        {
+            "name": "Mark_Donskoy",
+            "size": 47.745136626989705
+        },
+        {
+            "name": "Ilya_Khrzhanovsky",
+            "size": 27.582569282715003
+        },
+        {
+            "name": "Eldar_Kuliev",
+            "size": 15.974156230921203
+        },
+        {
+            "name": "Nikolai_Rasheyev",
+            "size": 10.78194192981275
+        },
+        {
+            "name": "Mikhail_Schweitzer",
+            "size": 15.32929141791052
+        },
+        {
+            "name": "Vasilyev_brothers",
+            "size": 14.858426277958364
+        },
+        {
+            "name": "Vladimir_Vajnshtok",
+            "size": 6.03735446836978
+        },
+        {
+            "name": "Frederica_Lacoponi",
+            "size": 2.8499999999999996
+        },
+        {
+            "name": "Andrei_Severny_(filmmaker)",
+            "size": 41.374232649376715
+        },
+        {
+            "name": "Eldor_Magomatovich_Urazbayev",
+            "size": 34.4750064108953
+        },
+        {
+            "name": "Oleg_Anofriyev",
+            "size": 14.556935235334759
+        },
+        {
+            "name": "Lev_Arnshtam",
+            "size": 9.931186839538007
+        },
+        {
+            "name": "Lev_Kuleshov",
+            "size": 13.94121921025532
+        },
+        {
+            "name": "Dziga_Vertov",
+            "size": 361.06671514679834
+        },
+        {
+            "name": "Mikhail_Doller",
+            "size": 10.422031288778083
+        },
+        {
+            "name": "Aleksandr_Medvedkin",
+            "size": 34.464486133785826
+        },
+        {
+            "name": "Andrey_Zvyagintsev",
+            "size": 15.614042904606206
+        },
+        {
+            "name": "Boris_Frumin",
+            "size": 11.313204775467337
+        },
+        {
+            "name": "Monte_Terminillo",
+            "size": 12.086666666666664
+        },
+        {
+            "name": "Sergey_Mikaelyan",
+            "size": 5.923564346090975
+        },
+        {
+            "name": "Tolomush_Okeyev",
+            "size": 156.76114862140994
+        },
+        {
+            "name": "Otar_Koberidze",
+            "size": 7.079481163049948
+        },
+        {
+            "name": "Vladimir_Mashkov",
+            "size": 40.095971936488816
+        },
+        {
+            "name": "Aleksandr_Porokhovshchikov",
+            "size": 6.583491970902621
+        },
+        {
+            "name": "Pavel_Lungin",
+            "size": 20.06075968517137
+        },
+        {
+            "name": "Aleksandr_Petrov_(animator)",
+            "size": 50.27345328855785
+        },
+        {
+            "name": "Yuri_Ozerov_(director)",
+            "size": 200.54406860827015
+        },
+        {
+            "name": "Sergei_Bondarchuk",
+            "size": 50.68331768123551
+        },
+        {
+            "name": "Pavel_Klushantsev",
+            "size": 36.488304539519966
+        },
+        {
+            "name": "Ivan_Okhlobystin",
+            "size": 26.402134410734526
+        },
+        {
+            "name": "Sergei_Solovyov",
+            "size": 18.21916899070233
+        },
+        {
+            "name": "Sergei_Eisenstein",
+            "size": 88.80597699169142
+        },
+        {
+            "name": "Ilya_Averbakh",
+            "size": 3.546660754767032
+        },
+        {
+            "name": "Herbert_Rappaport",
+            "size": 17.684099840489164
+        },
+        {
+            "name": "Gregory_Ratoff",
+            "size": 78.52909615604176
+        },
+        {
+            "name": "Maidstone_Grammar_School",
+            "size": 105.3599999999998
+        },
+        {
+            "name": "Boris_Shpis",
+            "size": 10.531657644038443
+        },
+        {
+            "name": "Modified_milk_ingredients",
+            "size": 8.799999999999999
+        },
+        {
+            "name": "Rolands_Kalni\u0146\u0161",
+            "size": 41.772880722241204
+        },
+        {
+            "name": "Stanislav_Govorukhin",
+            "size": 24.242831557504918
+        },
+        {
+            "name": "Alexander_Sokurov",
+            "size": 118.18822607324617
+        },
+        {
+            "name": "Valeriya_Gai_Germanika",
+            "size": 16.252798215296703
+        },
+        {
+            "name": "Foreskin_piercing",
+            "size": 9.735
+        },
+        {
+            "name": "Pavel_Ruminov",
+            "size": 20.070986422273563
+        },
+        {
+            "name": "Vsevolod_Pudovkin",
+            "size": 148.87593545577968
+        },
+        {
+            "name": "Mikhail_Romm",
+            "size": 23.390588996530486
+        },
+        {
+            "name": "Viktor_Ivanov_(stunt_coordinator)",
+            "size": 5.498671014574154
+        },
+        {
+            "name": "Sergei_Yutkevich",
+            "size": 12.323326535895772
+        },
+        {
+            "name": "Sergei_Parajanov",
+            "size": 81.53952444279186
+        },
+        {
+            "name": "Shaken_Aimanov",
+            "size": 15.725118128771134
+        },
+        {
+            "name": "Golbahar,_written_as_Gulbahar_too",
+            "size": 2.425
+        },
+        {
+            "name": "Viktor_Eisymont",
+            "size": 6.500869314736802
+        },
+        {
+            "name": "Yuri_Mamin",
+            "size": 112.01679760967629
+        },
+        {
+            "name": "Grigoriy_Dobrygin",
+            "size": 63.37287102661068
+        },
+        {
+            "name": "Tigran_Keosayan",
+            "size": 9.188787599662152
+        },
+        {
+            "name": "Leonid_Trauberg",
+            "size": 7.921451202892043
+        },
+        {
+            "name": "Alexander_Mitta",
+            "size": 16.442538998511104
+        },
+        {
+            "name": "Georgi_Gitis",
+            "size": 7.856136553436431
+        },
+        {
+            "name": "Victor_Trivas",
+            "size": 10.499879911328096
+        },
+        {
+            "name": "Boris_Babochkin",
+            "size": 59.04064339791765
+        },
+        {
+            "name": "Maria_Morozova",
+            "size": 11.925969454830867
+        },
+        {
+            "name": "Yuri_Ilyenko",
+            "size": 30.601239774120163
+        },
+        {
+            "name": "Oleg_Ryaskov",
+            "size": 5.924428090087225
+        },
+        {
+            "name": "Nikoloz_Shengelaia",
+            "size": 6.689037057092383
+        },
+        {
+            "name": "Elem_Klimov",
+            "size": 61.27189885800207
+        },
+        {
+            "name": "Yermek_Shinarbayev",
+            "size": 29.62488998873759
+        },
+        {
+            "name": "Artur_Aristakisyan",
+            "size": 3.4700039725931364
+        },
+        {
+            "name": "Aleksei_Yuryevich_German",
+            "size": 13.990889284404174
+        },
+        {
+            "name": "Igor_Maslennikov",
+            "size": 20.87338624805327
+        },
+        {
+            "name": "Temur_Babluani",
+            "size": 11.447094010272169
+        },
+        {
+            "name": "Ikiru_(director)",
+            "size": 5.279148555858157
+        },
+        {
+            "name": "Nikolai_Gubenko",
+            "size": 12.335302664528538
+        },
+        {
+            "name": "Georgi_Vasilyev",
+            "size": 11.175522571341805
+        },
+        {
+            "name": "Valeriy_Priyomykhov",
+            "size": 64.98643949876234
+        },
+        {
+            "name": "Viktor_Kossakovsky",
+            "size": 13.566197890359355
+        },
+        {
+            "name": "Lancashire_Witch",
+            "size": 72.90552108082302
+        },
+        {
+            "name": "Phoenix_Lights",
+            "size": 76.79999999999997
+        },
+        {
+            "name": "Nikolay_Serebryakov",
+            "size": 2.5484166989755797
+        },
+        {
+            "name": "Yevgeny_Yufit",
+            "size": 7.453459544389563
+        },
+        {
+            "name": "Aleksandr_Proshkin",
+            "size": 3.0694123060457223
+        },
+        {
+            "name": "Valeriu_Gagiu",
+            "size": 9.160937846026204
+        },
+        {
+            "name": "Alexei_Uchitel",
+            "size": 8.831205815692057
+        },
+        {
+            "name": "Ruslan_Vitryanyuk",
+            "size": 22.91527146626446
+        },
+        {
+            "name": "Aleksandr_Askoldov",
+            "size": 33.34113895152769
+        },
+        {
+            "name": "Alexander_Stefanovich",
+            "size": 4.237063557282506
+        },
+        {
+            "name": "Yuri_Kara",
+            "size": 10.498598358465344
+        },
+        {
+            "name": "Lev_Kulidzhanov",
+            "size": 12.017395166218058
+        },
+        {
+            "name": "Alexander_Goldstein",
+            "size": 79.91881764189337
+        },
+        {
+            "name": "Konstantin_Lopushansky",
+            "size": 6.051120005993143
+        },
+        {
+            "name": "Vladimir_Naumov",
+            "size": 6.2117416908224135
+        },
+        {
+            "name": "Victor_Ginzburg_(director)",
+            "size": 33.18931171647919
+        },
+        {
+            "name": "Vera_Storozheva",
+            "size": 6.2920763173445575
+        },
+        {
+            "name": "Grigori_Aleksandrov",
+            "size": 35.947837760413314
+        },
+        {
+            "name": "Alexander_Rou",
+            "size": 20.670847036358612
+        },
+        {
+            "name": "Huseyn_Seyidzadeh",
+            "size": 6.6202503117097775
+        },
+        {
+            "name": "Alyona_Polunina",
+            "size": 6.349587502106481
+        }
+    ]
+}
