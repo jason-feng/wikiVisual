@@ -28,7 +28,7 @@ def page_rank(wikiDump, directorsFile):
     # Save pageIds into list
     listRussianFilmDirectors = [pageId.rstrip('\n') for pageId in open(directorsFile)]
     listRussianFilmDirectors = sorted(listRussianFilmDirectors, key=int)
-
+    listRussianFilmDirectorsNoBirth = []
     #Pages is the full page of each pageid, #pageToTitle is the title of every page
     pages, pageToTitle = extractPage.process_data(wikiDump,listRussianFilmDirectors)
 
@@ -37,6 +37,7 @@ def page_rank(wikiDump, directorsFile):
     pageRanks = defaultdict(float) #Dictionary of the page rank of every page
     idBirth = defaultdict(str) #Dictionary of the birth year of every page
     group = defaultdict(str) # Dictionary of each grouping of the pagerank
+    pageRanksNoLow = defaultdict(float) # Page ranks with low values removed
 
     # Parse each page for links and birth dates
     regexLink='\[\[(.+?)\]\]' # get all matches between [[ ]] this is dump link format
@@ -54,15 +55,16 @@ def page_rank(wikiDump, directorsFile):
             birth_date = birth_date[0];
             birth_date = birth_date.split('|')
             for split in birth_date:
-                if len(split) == 4 and len(split).isdigit():
+                if len(split) == 4 and split.isdigit():
                     idBirth[directors] = split
+                    listRussianFilmDirectorsNoBirth.add(directors)
         else:
-            print "Birthdate not found"
-            listRussianFilmDirectors.remove(directors)
+            print "Birthdate not found:"
+            print directors
             pageLinks.pop(directors)
 
     # Initiatize all pageRanks to 1
-    for (idx, directors) in enumerate(listRussianFilmDirectors):
+    for (idx, directors) in enumerate(listRussianFilmDirectorsNoBirth):
         pageRanks[directors] = 1.0;
     #
     # # PageRank of A = 0.15 + 0.85 * 1/numLinks
@@ -72,22 +74,28 @@ def page_rank(wikiDump, directorsFile):
             pageRanks[directors] += 0.85 * 1.0/numLinks[link];
         pageRanks[directors] += 0.15
         if pageRanks[directors] <= 1.15:
-            pageRanks.pop(directors)
-            listRussianFilmDirectors.remove(directors)
+            print "Pagerank too low"
+            print directors
         elif pageRanks[directors] >= 100:
             group[directors] = "high"
+            pageRanksNoLow[directors] = pageRanks[directors]
         elif pageRanks[directors] >= 30:
             group[directors] = "medium"
+            pageRanksNoLow[directors] = pageRanks[directors]
         else:
             group[directors] = "low"
+            pageRanksNoLow[directors] = pageRanks[directors]
+
+    print pageRanksNoLow
 
     # Write out data to csv
     f = open('../data/pageRanks.csv','w')
     writer = csv.writer(f)
-    csv = ["title","pagerank","year","group","id"]
-    writer.writerow(csv)
-    for key, value in pageRanks.items():
-       writer.writerow([pageToTitle[key].encode('utf-8').strip(), value, idBirth[key], group[key], key])
+    labels = ["title","pagerank","year","group","id"]
+    writer.writerow(labels)
+    for key, value in pageRanksNoLow.items():
+        if not "Category:" in pageToTitle[key]:
+            writer.writerow([pageToTitle[key].encode('utf-8').strip(), value, idBirth[key], group[key], key])
     f.close()
 
 def main():

@@ -87,11 +87,15 @@
         BubbleChart.prototype.create_vis = function() {
             var that;
             this.vis = d3.select("#vis").append("svg").attr("width", this.width).attr("height", this.height).attr("id", "svg_vis");
-            this.circles = this.vis.selectAll("circle").data(this.nodes, function(d) {
+
+            // Draws the circles from the nodes
+            this.circles = this.vis.selectAll("g").data(this.nodes, function(d) {
                 return d.id;
             });
             that = this;
-            var nodes = this.circles.enter().append("circle").attr("r", 0).attr("fill", (function(_this) {
+
+            // var node = this.circles.attr("class", "node");
+            this.circles.enter().append("g").append("circle").attr("r", 0).attr("fill", (function(_this) {
                 return function(d) {
                     return _this.fill_color(d.group);
                 };
@@ -109,7 +113,13 @@
                 return that.hide_details(d, i, this);
             });
 
-            return this.circles.transition().duration(2000).attr("r", function(d) {
+
+            this.vis.selectAll("g").append("text")
+            .attr("dy", ".3em")
+            .style("text-anchor", "middle")
+            .text(function(d) { return d.name.split('_')[0] + " " + d.name.split('_')[1] });
+
+            return this.vis.selectAll("circle").transition().duration(2000).attr("r", function(d) {
                 return d.radius;
             });
         };
@@ -125,10 +135,8 @@
         BubbleChart.prototype.display_group_all = function() {
             this.force.gravity(this.layout_gravity).charge(this.charge).friction(0.9).on("tick", (function(_this) {
                 return function(e) {
-                    return _this.circles.each(_this.move_towards_center(e.alpha)).attr("cx", function(d) {
-                        return d.x;
-                    }).attr("cy", function(d) {
-                        return d.y;
+                    return _this.vis.selectAll("g").each(_this.move_towards_center(e.alpha)).attr("transform", function(d) {
+                        return "translate(" + d.x + "," + d.y + ")";
                     });
                 };
             })(this));
@@ -148,10 +156,8 @@
         BubbleChart.prototype.display_by_year = function() {
             this.force.gravity(this.layout_gravity).charge(this.charge).friction(0.9).on("tick", (function(_this) {
                 return function(e) {
-                    return _this.circles.each(_this.move_towards_year(e.alpha)).attr("cx", function(d) {
-                        return d.x;
-                    }).attr("cy", function(d) {
-                        return d.y;
+                    return _this.vis.selectAll("g").each(_this.move_towards_year(e.alpha)).attr("transform", function(d) {
+                        return "translate(" + d.x + "," + d.y + ")";
                     });
                 };
             })(this));
