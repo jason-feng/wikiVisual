@@ -2,13 +2,13 @@
 
 The goal of this project is to take a group of Wikipedia pages in the same category, and reateual representation of their importance calculated as Page Rank. Wikipedia has an enormous amount of information that it can be intimidating and difficult to extract immediately the most important pieces of information about a single topic. This project attempts to give users a very quick way to determine what the most essential articles are for a specific Wikipedia category and navigate to their specific points of interest.
 
-I would like to acknowledge Giuseppe Attardi and his wikiextractor project, and Professor Mikhail Gronas of the Russian Department at Dartmouth and Tim Tregubov of the CS Department at Dartmouth for all of their advice, and Wikipedia for providing me with the dataset that made this project possible. 
+I would like to acknowledge Giuseppe Attardi and his wikiextractor project, Jim Vallandignham and his [gates_bubbles project](https://github.com/vlandham/gates_bubbles) and Professor Mikhail Gronas of the Russian Department at Dartmouth and Tim Tregubov of the CS Department at Dartmouth for all of their advice, and Wikipedia for providing me with the dataset that made this project possible. 
 
 ----
 
 ### visualization
 
-In the home directory there is a index.html page that uses [d3js](d3js.org) to construct a bubble chart visualization. The size of each bubble is based on the Page Rank and colors for each bubble is randomly assigned. By clicking on a bubble, you will be taken to the wikipedia page for that article. 
+In the home directory there is a index.html page that uses [d3js](d3js.org) to construct a bubble chart visualization. The size of each bubble is based on the Page Rank and colors for each bubble is assigned by the magnitude of the page rank, which is broken down into 3 groups. By clicking on a bubble, you will be taken to the wikipedia page for that article. The visualization is based off the [gates_bubbles project](https://github.com/vlandham/gates_bubbles). 
 
 ### data
 
