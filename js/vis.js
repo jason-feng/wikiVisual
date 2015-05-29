@@ -21,8 +21,8 @@
             this.create_nodes = __bind(this.create_nodes, this);
             var max_amount;
             this.data = data;
-            this.width = 940;
-            this.height = 600;
+            this.width = 1440;
+            this.height = 920;
             this.tooltip = CustomTooltip("gates_tooltip", 240);
             this.center = {
                 x: this.width / 2,
@@ -50,11 +50,11 @@
             this.nodes = [];
             this.force = null;
             this.circles = null;
-            this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["#FD8D3C", "#C6E7DB", "#76C8AE"]);
+            this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["#FD8D3C", "#C6E7DB", "#BD71EB"]);
             max_amount = d3.max(this.data, function(d) {
                 return parseInt(d.pagerank);
             });
-            this.radius_scale = d3.scale.pow().exponent(0.5).domain([0, max_amount]).range([2, 85]);
+            this.radius_scale = d3.scale.pow().exponent(0.5).domain([0, max_amount]).range([2, 130]);
             this.create_nodes();
             this.create_vis();
             createYears(this.year_centers, this.width, this.height);
@@ -72,6 +72,7 @@
                         value: d.pagerank,
                         name: d.title,
                         year: d.year,
+                        group: d.group,
                         x: Math.random() * 900,
                         y: Math.random() * 800
                     };
@@ -219,31 +220,53 @@
     // Dynamically creates the years
     function createYears(year_centers, width, height) {
         var years = new Array();
-        var csv = d3.csv("data/pagerank.csv", function(d) {
+        var csv = d3.csv("data/pageRanks.csv", function(d) {
             for (var i = 0; i < d3.keys(d).length; i++) {
                 years.push(d3.values(d)[i].year);
             }
             years = _.uniq(years);
             years = years.sort();
             for (var i = 0; i < years.length; i++) {
-                year_centers[years[i]] = {
-                    x: (i/2) * width / 2 ,
-                    y: height / 2
-                };
+                if (i == 0) {
+                    year_centers[years[i]] = {
+                        x: (i+0.5) * width / years.length ,
+                        y: height / 2
+                    };
+                }
+                else if (i == years.length -1) {
+                    year_centers[years[i]] = {
+                        x: (i-0.5) * width / years.length ,
+                        y: height / 2
+                    };
+                }
+                else {
+                    year_centers[years[i]] = {
+                        x: (i) * width / years.length ,
+                        y: height / 2
+                    };
+                }
             }
         });
     }
 
     function createYearLabels(years_x, width) {
         var years = new Array();
-        var csv = d3.csv("data/pagerank.csv", function(d) {
+        var csv = d3.csv("data/pageRanks.csv", function(d) {
             for (var i = 0; i < d3.keys(d).length; i++) {
                 years.push(d3.values(d)[i].year);
             }
             years = _.uniq(years);
             years = years.sort();
-            for (var i = 0; i < years.length; i++) {
-                years_x[years[i]] = i*100;
+            for (var i = 0; i < years.length; i=i+5) {
+                if (i == 0) {
+                    years_x[years[i]] = 0.5*width/years.length
+                }
+                else if (i == years.length - 1) {
+                    years_x[years[i]] = (i-0.5)*width/years.length;
+                }
+                else {
+                    years_x[years[i]] = i*width/years.length;
+                }
             }
         });
     }
@@ -276,7 +299,7 @@
                 }
             };
         })(this);
-        return d3.csv("data/pagerank.csv", render_vis);
+        return d3.csv("data/pageRanks.csv", render_vis);
     });
 
 }).call(this);

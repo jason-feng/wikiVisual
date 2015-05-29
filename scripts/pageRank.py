@@ -52,7 +52,7 @@ for (idx, directors) in enumerate(listRussianFilmDirectors):
     for link in pageLinks[directors]: # Get list of all links for one page
         pageRanks[directors] += 0.85 * 1.0/numLinks[link];
     pageRanks[directors] += 0.15
-    if pageRanks[directors] == 1.15:
+    if pageRanks[directors] <= 1.15:
         pageRanks.pop(directors)
         listRussianFilmDirectors.remove(directors)
     elif pageRanks[directors] >= 100:
