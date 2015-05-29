@@ -47,7 +47,7 @@ The extractPage.py script is invoked with a Wikipedia dump file as an argument.
 
 This folder contains all of the CSS files. We use bootstrap in this project
 
-#js
+###js
 
 vis.js contains the script for the d3.js visualization. CustomTooltip.js contains the code for the node tooltips. Libs contains of the javascript libraries we are using which include d3.js, jquery, bootstrap, modernizr, and underscore. 
 
