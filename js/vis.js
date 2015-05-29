@@ -28,20 +28,22 @@
                 x: this.width / 2,
                 y: this.height / 2
             };
-            this.year_centers = {
-                "1932": {
-                    x: this.width / 3,
-                    y: this.height / 2
-                },
-                "1911": {
-                    x: this.width / 2,
-                    y: this.height / 2
-                },
-                "1943": {
-                    x: 2 * this.width / 3,
-                    y: this.height / 2
-                }
-            };
+            // this.year_centers = {
+            //     "1932": {
+            //         x: this.width / 3,
+            //         y: this.height / 2
+            //     },
+            //     "1911": {
+            //         x: this.width / 2,
+            //         y: this.height / 2
+            //     },
+            //     "1943": {
+            //         x: 2 * this.width / 3,
+            //         y: this.height / 2
+            //     }
+            // };
+            this.years_x = {}
+            this.year_centers = {};
             this.layout_gravity = -0.01;
             this.damper = 0.1;
             this.vis = null;
@@ -55,6 +57,9 @@
             this.radius_scale = d3.scale.pow().exponent(0.5).domain([0, max_amount]).range([2, 85]);
             this.create_nodes();
             this.create_vis();
+            createYears(this.year_centers, this.width, this.height);
+            createYearLabels(this.years_x, this.width);
+
         }
 
         BubbleChart.prototype.create_nodes = function() {
@@ -165,11 +170,12 @@
 
         BubbleChart.prototype.display_years = function() {
             var years, years_data, years_x;
-            years_x = {
-                "1932": 160,
-                "1943": this.width / 2,
-                "1911": this.width - 160
-            };
+            // years_x = {
+            //     "1932": 160,
+            //     "1943": this.width / 2,
+            //     "1911": this.width - 160
+            // };
+            years_x = this.years_x;
             years_data = d3.keys(years_x);
             years = this.vis.selectAll(".years").data(years_data);
             return years.enter().append("text").attr("class", "years").attr("x", (function(_this) {
@@ -210,24 +216,36 @@
 
     root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
-    function createYears() {
+    // Dynamically creates the years
+    function createYears(year_centers, width, height) {
         var years = new Array();
-        var createYears = {};
         var csv = d3.csv("data/pagerank.csv", function(d) {
             for (var i = 0; i < d3.keys(d).length; i++) {
-                console.log(d3.values(d)[i].year);
                 years.push(d3.values(d)[i].year);
             }
             years = _.uniq(years);
+            years = years.sort();
+            for (var i = 0; i < years.length; i++) {
+                year_centers[years[i]] = {
+                    x: (i/2) * width / 2 ,
+                    y: height / 2
+                };
+            }
         });
-        for (var i = 0; i < years.length; i++) {
-            createYears[years[i]] = {
-                x: 940 / 2,
-                y: 600 / 2
-            };
-        }
-        console.log(createYears);
-        return createYears;
+    }
+
+    function createYearLabels(years_x, width) {
+        var years = new Array();
+        var csv = d3.csv("data/pagerank.csv", function(d) {
+            for (var i = 0; i < d3.keys(d).length; i++) {
+                years.push(d3.values(d)[i].year);
+            }
+            years = _.uniq(years);
+            years = years.sort();
+            for (var i = 0; i < years.length; i++) {
+                years_x[years[i]] = i*100;
+            }
+        });
     }
 
     $(function() {

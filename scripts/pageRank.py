@@ -6,7 +6,7 @@ from collections import defaultdict
 
 #  File names
 wikiDump = '/Users/jasonfeng/Downloads/enwiki-20150515-pages-articles.xml'
-directorsFile = '../data/listRussianSovietFilmDirectors'
+directorsFile = '../data/listRussianFilmDirectors'
 testFile = '../data/listTest'
 
 # Save pageIds into list
@@ -63,10 +63,10 @@ for (idx, directors) in enumerate(listRussianFilmDirectors):
         group[directors] = "low"
 
 # Write out data to csv
-f = open('../data/pageRanks.csv','wb')
+f = open('../data/pageRanks.csv','w')
 writer = csv.writer(f)
 csv = ["title","pagerank","year","group","id"]
 writer.writerow(csv)
 for key, value in pageRanks.items():
-   writer.writerow([pageToTitle[key], value, idBirth[key], group[key],key])
+   writer.writerow([pageToTitle[key].encode('utf-8').strip(), value, idBirth[key], group[key], key])
 f.close()

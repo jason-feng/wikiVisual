@@ -84,7 +84,7 @@ def process_data(input_file, id, templates=False):
             elif tag == 'id':
                 curid = m.group(3)
                 if curid in id:
-                    # print curid
+                    print curid
                     page.append(line)
                     inArticle = True
                 elif not inArticle and not templates:
