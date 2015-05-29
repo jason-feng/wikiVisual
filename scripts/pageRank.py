@@ -20,7 +20,7 @@ numLinks = defaultdict(int) #Dictionary of numLinks of each link we find
 pageLinks = defaultdict(list) #Dictionary of the links of every page
 pageRanks = defaultdict(float) #Dictionary of the page rank of every page
 idBirth = defaultdict(str) #Dictionary of the birth year of every page
-
+group = defaultdict(str) # Dictionary of each grouping of the pagerank
 # Parse each page for links and birth dates
 regexLink='\[\[(.+?)\]\]' # get all matches between [[ ]] this is dump link format
 regexBirth='\{\{Birth date(.+?)\}\}' # birth_date = {{Birth date|df=yes|1932|4|4}}
@@ -34,12 +34,12 @@ for idx, directors in enumerate(listRussianFilmDirectors):
     if birth_date:
         birth_date = birth_date[0];
         birth_date = birth_date.split('|')
-        birth_year = birth_date[2]
-        idBirth[directors] = birth_year
+        for split in birth_date:
+            if len(split) == 4:
+                idBirth[directors] = split
     else:
+        print "Birthdate not found"
         listRussianFilmDirectors.remove(directors)
-
-print idBirth
 
 # Initiatize all pageRanks to 1
 for (idx, directors) in enumerate(listRussianFilmDirectors):
@@ -51,16 +51,23 @@ for (idx, directors) in enumerate(listRussianFilmDirectors):
     for link in pageLinks[directors]: # Get list of all links for one page
         pageRanks[directors] += 0.85 * 1.0/numLinks[link];
     pageRanks[directors] += 0.15
-
-print pageRanks
+    if pageRanks[directors] == 1.15:
+        pageRanks.pop(directors)
+        listRussianFilmDirectors.remove(directors)
+    elif pageRanks[directors] >= 100:
+        group[directors] = "high"
+    elif pageRanks[directors] >= 30:
+        group[directors] = "medium"
+    else:
+        group[directors] = "low"
 
 # Write out data to csv
 f = open('../csv/pageRanks.csv','wb')
 writer = csv.writer(f)
-csv = ["title","pagerank","year","id"]
+csv = ["title","pagerank","year","group","id"]
 writer.writerow(csv)
 for key, value in pageRanks.items():
-   writer.writerow([pageToTitle[key], value, idBirth[key], key])
+   writer.writerow([pageToTitle[key], value, idBirth[key], group[key],key])
 f.close()
 #
 # d = {"name":"Russian Film Directors",
