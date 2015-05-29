@@ -8,7 +8,7 @@ I would like to acknowledge Giuseppe Attardi and his wikiextractor project, Jim 
 
 ### visualization
 
-In the home directory there is a index.html page that uses [d3js](d3js.org) to construct a bubble chart visualization. The size of each bubble is based on the Page Rank and colors for each bubble is assigned by the magnitude of the page rank, which is broken down into 3 groups. By clicking on a bubble, you will be taken to the wikipedia page for that article. The visualization is based off the [gates_bubbles project](https://github.com/vlandham/gates_bubbles). 
+In the home directory there is a index.html page that uses [d3js](d3js.org) to construct a bubble chart visualization. The size of each bubble is based on the Page Rank and colors for each bubble is assigned by the magnitude of the page rank, which is broken down into 3 groups. By clicking on a bubble, you will be taken to the wikipedia page for that article. The visualization is based off the [gates_bubbles project](https://github.com/vlandham/gates_bubbles). An in depth tutorial about the visualization which I used can be found [here](http://vallandingham.me/bubble_charts_in_d3.html).
 
 #### visualization usage
 
