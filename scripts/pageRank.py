@@ -21,6 +21,7 @@ pageLinks = defaultdict(list) #Dictionary of the links of every page
 pageRanks = defaultdict(float) #Dictionary of the page rank of every page
 idBirth = defaultdict(str) #Dictionary of the birth year of every page
 group = defaultdict(str) # Dictionary of each grouping of the pagerank
+
 # Parse each page for links and birth dates
 regexLink='\[\[(.+?)\]\]' # get all matches between [[ ]] this is dump link format
 regexBirth='\{\{Birth date(.+?)\}\}' # birth_date = {{Birth date|df=yes|1932|4|4}}
@@ -62,17 +63,10 @@ for (idx, directors) in enumerate(listRussianFilmDirectors):
         group[directors] = "low"
 
 # Write out data to csv
-f = open('../csv/pageRanks.csv','wb')
+f = open('../data/pageRanks.csv','wb')
 writer = csv.writer(f)
 csv = ["title","pagerank","year","group","id"]
 writer.writerow(csv)
 for key, value in pageRanks.items():
    writer.writerow([pageToTitle[key], value, idBirth[key], group[key],key])
 f.close()
-#
-# d = {"name":"Russian Film Directors",
-#      "children":[{'name':key,"size":value} for key,value in titlePageRanks.items()]}
-# j = json.dumps(d, indent=4)
-# f = open('../json/pageRanks.json', 'w')
-# print >> f, j
-# f.close()
