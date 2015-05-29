@@ -115,9 +115,27 @@
 
 
             this.vis.selectAll("g").append("text")
+            .attr("font-size", function(d) {
+                if (d.group.localeCompare("high") == 0) {
+                    return "24px"
+                }
+                else if (d.group.localeCompare("medium") == 0){
+                    return "12px";
+                }
+                else {
+                    return "0px"
+                }
+            })
             .attr("dy", ".3em")
             .style("text-anchor", "middle")
-            .text(function(d) { return d.name.split('_')[0] + " " + d.name.split('_')[1] });
+            .text(function(d) {
+                if (d.group.localeCompare("high") == 0 || d.group.localeCompare("medium") == 0) {
+                    return d.name.split('_')[0]  + " " + d.name.split('_')[1]
+                }
+                else {
+                    return "";
+                }
+            });
 
             return this.vis.selectAll("circle").transition().duration(2000).attr("r", function(d) {
                 return d.radius;
