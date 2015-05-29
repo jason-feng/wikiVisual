@@ -50,7 +50,7 @@
             this.nodes = [];
             this.force = null;
             this.circles = null;
-            this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["#FD8D3C", "#C6E7DB", "#BD71EB"]);
+            this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["#F8A942", "#C6E7DB", "#9C71EB"]);
             max_amount = d3.max(this.data, function(d) {
                 return parseInt(d.pagerank);
             });
@@ -91,7 +91,7 @@
                 return d.id;
             });
             that = this;
-            this.circles.enter().append("circle").attr("r", 0).attr("fill", (function(_this) {
+            var nodes = this.circles.enter().append("circle").attr("r", 0).attr("fill", (function(_this) {
                 return function(d) {
                     return _this.fill_color(d.group);
                 };
@@ -108,6 +108,7 @@
             }).on("mouseout", function(d, i) {
                 return that.hide_details(d, i, this);
             });
+
             return this.circles.transition().duration(2000).attr("r", function(d) {
                 return d.radius;
             });
