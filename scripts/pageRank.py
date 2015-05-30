@@ -57,7 +57,7 @@ def page_rank(wikiDump, directorsFile):
             for split in birth_date:
                 if len(split) == 4 and split.isdigit():
                     idBirth[directors] = split
-                    listRussianFilmDirectorsNoBirth.add(directors)
+                    listRussianFilmDirectorsNoBirth.append(directors)
         else:
             print "Birthdate not found:"
             print directors

@@ -50,7 +50,7 @@
             this.nodes = [];
             this.force = null;
             this.circles = null;
-            this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["#F8A942", "#C6E7DB", "#9C71EB"]);
+            this.fill_color = d3.scale.ordinal().domain(["low", "medium", "high"]).range(["#F38630", "#A7DBD8", "#69D2E7"]);
             max_amount = d3.max(this.data, function(d) {
                 return parseInt(d.pagerank);
             });
