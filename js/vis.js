@@ -22,7 +22,7 @@
             var max_amount;
             this.data = data;
             this.width = 1440;
-            this.height = 920;
+            this.height = 720;
             this.tooltip = CustomTooltip("gates_tooltip", 240);
             this.center = {
                 x: this.width / 2,
@@ -45,7 +45,7 @@
             this.years_x = {}
             this.year_centers = {};
             this.layout_gravity = -0.01;
-            this.damper = 0.1;
+            this.damper = 0.07;
             this.vis = null;
             this.nodes = [];
             this.force = null;
@@ -54,7 +54,7 @@
             max_amount = d3.max(this.data, function(d) {
                 return parseInt(d.pagerank);
             });
-            this.radius_scale = d3.scale.pow().exponent(0.5).domain([0, max_amount]).range([2, 130]);
+            this.radius_scale = d3.scale.pow().exponent(0.5).domain([0, max_amount]).range([2, 85]);
             this.create_nodes();
             this.create_vis();
             createYears(this.year_centers, this.width, this.height);
@@ -117,7 +117,7 @@
             this.vis.selectAll("g").append("text")
             .attr("font-size", function(d) {
                 if (d.group.localeCompare("high") == 0) {
-                    return "24px"
+                    return "18px"
                 }
                 else if (d.group.localeCompare("medium") == 0){
                     return "12px";
@@ -258,7 +258,7 @@
                         y: height / 2
                     };
                 }
-                else if (i == years.length -1) {
+                else if (i == years.length - 1) {
                     year_centers[years[i]] = {
                         x: (i-0.5) * width / years.length ,
                         y: height / 2
@@ -266,7 +266,7 @@
                 }
                 else {
                     year_centers[years[i]] = {
-                        x: (i) * width / years.length ,
+                        x: width / 6 + 0.70 * i * width / years.length,
                         y: height / 2
                     };
                 }
@@ -282,9 +282,9 @@
             }
             years = _.uniq(years);
             years = years.sort();
-            for (var i = 0; i < years.length; i=i+5) {
+            for (var i = 0; i < years.length; i=i+7) {
                 if (i == 0) {
-                    years_x[years[i]] = 0.5*width/years.length
+                    years_x[years[i]] = width/years.length
                 }
                 else if (i == years.length - 1) {
                     years_x[years[i]] = (i-0.5)*width/years.length;

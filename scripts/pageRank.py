@@ -59,14 +59,12 @@ def page_rank(wikiDump, directorsFile):
                     idBirth[directors] = split
                     listRussianFilmDirectorsNoBirth.append(directors)
         else:
-            print "Birthdate not found:"
-            print directors
             pageLinks.pop(directors)
 
     # Initiatize all pageRanks to 1
     for (idx, directors) in enumerate(listRussianFilmDirectorsNoBirth):
         pageRanks[directors] = 1.0;
-    #
+    
     # # PageRank of A = 0.15 + 0.85 * 1/numLinks
     # # Iteration one
     for (idx, directors) in enumerate(listRussianFilmDirectors):
@@ -74,8 +72,6 @@ def page_rank(wikiDump, directorsFile):
             pageRanks[directors] += 0.85 * 1.0/numLinks[link];
         pageRanks[directors] += 0.15
         if pageRanks[directors] <= 1.15:
-            print "Pagerank too low"
-            print directors
         elif pageRanks[directors] >= 100:
             group[directors] = "high"
             pageRanksNoLow[directors] = pageRanks[directors]
@@ -85,8 +81,6 @@ def page_rank(wikiDump, directorsFile):
         else:
             group[directors] = "low"
             pageRanksNoLow[directors] = pageRanks[directors]
-
-    print pageRanksNoLow
 
     # Write out data to csv
     f = open('../data/pageRanks.csv','w')
