@@ -61,7 +61,9 @@ def process_data(input_file, id, templates=False):
 
     pageToTitle = defaultdict(str)
 
-    pages = []
+    pages = defaultdict(str)
+
+    visited = []
 
     input = opener(input_file)
 
@@ -83,8 +85,8 @@ def process_data(input_file, id, templates=False):
                 inArticle = False
             elif tag == 'id':
                 curid = m.group(3)
-                if curid in id:
-                    print curid
+                if curid in id and curid not in visited:
+                    visited.append(curid)
                     page.append(line)
                     inArticle = True
                 elif not inArticle and not templates:
@@ -102,7 +104,8 @@ def process_data(input_file, id, templates=False):
                 if page:
                     page.append(line)
                     # print ''.join(page).encode('utf-8')
-                    pages.append(''.join(page).encode('utf-8'))
+                    print val
+                    pages[val] = ''.join(page).encode('utf-8')
                     if not templates:
                         break
                 page = []
@@ -111,7 +114,9 @@ def process_data(input_file, id, templates=False):
 
     input.close()
 
-    return pages, pageToTitle
+    # print pages;
+
+    return pages, pageToTitle, visited
 
 def main():
     parser = argparse.ArgumentParser(prog=os.path.basename(sys.argv[0]),
