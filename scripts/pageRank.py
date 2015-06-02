@@ -90,10 +90,10 @@ def page_rank(wikiDump, directorsFile):
         pageRanks[directors] += 0.15
         if pageRanks[directors] <= 1.15:
             continue
-        elif pageRanks[directors] >= 100:
+        elif pageRanks[directors] >= 30:
             group[directors] = "high"
             pageRanksNoLow[directors] = pageRanks[directors]
-        elif pageRanks[directors] >= 30:
+        elif pageRanks[directors] >= 15:
             group[directors] = "medium"
             pageRanksNoLow[directors] = pageRanks[directors]
         else:

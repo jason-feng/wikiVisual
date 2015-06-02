@@ -22,7 +22,7 @@
             var max_amount;
             this.data = data;
             this.width = 1440;
-            this.height = 720;
+            this.height = 920;
             this.tooltip = CustomTooltip("gates_tooltip", 240);
             this.center = {
                 x: this.width / 2,
